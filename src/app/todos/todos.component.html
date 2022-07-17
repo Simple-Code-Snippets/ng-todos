@@ -1,0 +1,6 @@
+<app-todo-form (sendTask)="onAdd($event)"></app-todo-form>
+<ul *ngIf="todos.length > 0">
+  <ng-container *ngFor="let todo of todos">
+    <app-todo [todo]="todo"></app-todo>
+  </ng-container>
+</ul>
