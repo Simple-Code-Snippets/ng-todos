@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { TodosComponent } from './todos/todos.component';
 import { TodoComponent } from './todo/todo.component';
 import { TodoFormComponent } from './todo-form/todo-form.component';
+import { TodoDetailsComponent } from './todo-details/todo-details.component';
 
 @NgModule({
-  declarations: [AppComponent, TodosComponent, TodoComponent, TodoFormComponent],
+  declarations: [AppComponent, TodosComponent, TodoComponent, TodoFormComponent, TodoDetailsComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],

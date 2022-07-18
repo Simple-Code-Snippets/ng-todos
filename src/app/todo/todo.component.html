@@ -1,1 +1,3 @@
-<li>{{ todo.task }}</li>
+<li>
+  <a [routerLink]="todo.id.toString()">{{ todo.task }}</a>
+</li>

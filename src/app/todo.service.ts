@@ -12,4 +12,8 @@ export class TodoService {
   add(todo: Todo) {
     this.todos.push(todo);
   }
+
+  get(id: number) {
+    return this.todos.find((todo) => todo.id === id)!;
+  }
 }

@@ -16,6 +16,7 @@ export class TodosComponent {
 
   onAdd(task: string) {
     const todo: Todo = {
+      id: Date.now(),
       task: task,
       isDone: false,
     };
