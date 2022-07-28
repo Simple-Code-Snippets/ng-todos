@@ -13,7 +13,7 @@ export class TodoDetailsComponent {
 
   constructor(private route: ActivatedRoute, private todoService: TodoService) {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.todo = this.getTodo(id);
+    // this.todo = this.getTodo(id);
   }
 
   getTodo(id: number) {

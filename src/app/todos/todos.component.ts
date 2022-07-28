@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Todo } from '../todo.model';
 import { TodoService } from '../todo.service';
 
@@ -8,10 +9,10 @@ import { TodoService } from '../todo.service';
   styleUrls: ['./todos.component.css'],
 })
 export class TodosComponent {
-  todos: Todo[] = [];
+  todos$!: Observable<Todo[]>;
 
   constructor(private todoService: TodoService) {
-    this.todos = this.todoService.todos;
+    this.todos$ = this.todoService.getAll();
   }
 
   onAdd(task: string) {
